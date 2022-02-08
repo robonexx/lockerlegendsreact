@@ -1,0 +1,63 @@
+.homeMain {
+  padding: 0;
+  background: var(--color-bg);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeSection {
+  position: relative;
+  margin: 20vh auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+  > h3 {
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--color-articles);
+  }
+  .header {
+    margin: 3rem auto;
+    font-family: var(--big-font);
+    font-size: 8rem;
+    color: var(--color-txt);
+  }
+
+    .sub-header {
+      font-size: 4rem;
+      font-weight: 100;
+      font-style: italic;
+    }
+}
+
+article {
+  position: relative;
+  margin: 20rem auto 10rem;
+  padding: 1rem 20rem;
+
+  
+  h2 {
+    margin: 5rem auto 5rem;
+    color: #fff;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: #fafafa;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 100;
+  }
+}

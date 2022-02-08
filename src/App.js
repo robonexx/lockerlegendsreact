@@ -1,25 +1,89 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
+import Home from './pages/Home'
+import About from './pages/About'
+import Navbar from './components/Navbar/Navbar'
+import HallOfFame from './pages/HallOfFame'
+import Loading from './components/loading/Loading'
 
 function App() {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+        setLoading(false)
+    }, 6000)
+}, [])
+
+/*   
+const [change, setChange] = useState(null)
+
+useEffect (() =>{  
+    function changeColor () {
+      let header = document.querySelector("h1");
+      let text = header.textContent.toLowerCase();
+      let color;
+      switch(text) {
+        case 'about':
+          color = "#16A085";
+          break;
+        case 'projects':
+          color = "#E74C3C";
+          break;
+        case 'contacts':
+          color = "#2980B9";
+          break;
+        default:
+          color = "#F1C40F";
+          break;
+      }
+      // update the custom property for the root element and have it cascade on the header as well
+      let root = document.querySelector(":root");
+      root.style.setProperty("--color-home", color);
+    }
+  })  */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App">
+        { loading ?
+          <div>
+            <Loading loading={loading} setLoading={setLoading} />
+          </div>
+          :
+          <div>
+            <Navbar />
+            <Switch>
+              <Route exact path="/">
+                {/* <h1>HOME</h1> */}
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/history">
+                <h1>History</h1>
+              </Route>
+              <Route path="/articles">
+                <h1>Articles</h1>
+              </Route>
+              <Route path="/halloffame">
+                <HallOfFame />
+              </Route>
+              <Route path="/contacts">
+                <h1>Contacts</h1>
+              </Route>
+              <Route exact path="*" component={Error} />
+
+            </Switch>
+          </div>
+        }
     </div>
+    </Router>
   );
 }
 
 export default App;
+
