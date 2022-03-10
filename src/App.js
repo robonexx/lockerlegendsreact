@@ -1,22 +1,24 @@
 import './App.scss';
-import React, { useState, useEffect } from 'react';
+import React, { /* useState, useEffect  */} from 'react';
 import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar/Navbar'
 import HallOfFame from './pages/HallOfFame'
-import Loading from './components/loading/Loading'
+import History from './pages/History'
+import Articles from './pages/Articles'
+/* import Loading from './components/loading/Loading' */
 
 function App() {
 
-  const [loading, setLoading] = useState(true)
+  /* const [loading, setLoading] = useState(true) */
 
-  useEffect(() => {
+  /* useEffect(() => {
     setTimeout(() => {
         setLoading(false)
     }, 6000)
 }, [])
-
+ */
 /*   
 const [change, setChange] = useState(null)
 
@@ -48,11 +50,11 @@ useEffect (() =>{
   return (
     <Router>
       <div className="App">
-        { loading ?
+        {/* { loading ?
           <div>
             <Loading loading={loading} setLoading={setLoading} />
           </div>
-          :
+          : */}
           <div>
             <Navbar />
             <Switch>
@@ -64,10 +66,10 @@ useEffect (() =>{
                 <About />
               </Route>
               <Route path="/history">
-                <h1>History</h1>
+                <History />
               </Route>
               <Route path="/articles">
-                <h1>Articles</h1>
+                <Articles/>
               </Route>
               <Route path="/halloffame">
                 <HallOfFame />
@@ -79,7 +81,7 @@ useEffect (() =>{
 
             </Switch>
           </div>
-        }
+        {/* } */}
     </div>
     </Router>
   );

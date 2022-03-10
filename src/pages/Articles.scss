@@ -1,0 +1,17 @@
+.articles-page {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    padding: 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+
+    h1 {
+        margin: 2rem auto;
+        color: black;
+    }
+}
+

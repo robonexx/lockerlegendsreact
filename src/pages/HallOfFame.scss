@@ -6,6 +6,13 @@
     font-family: 'Lato', Arial, sans-serif;
     line-height: 1.5;
 
+    .hof-title {
+      font-size: 4rem;
+      text-align: center;
+      text-shadow: 0px 6px 6px rgba(0,0,0,0.335);
+      margin-bottom: 10rem;
+    }
+
 
     #navbar {
         position: fixed;
@@ -18,18 +25,20 @@
         background-color: #121212;
       }
       
-      header {
+    #main-doc h1 {
         color: #fafafa;
-        margin: 1rem;
+        margin: 5rem;
         text-align: center;
-        font-size: 1.4em;
+        font-size: 5em;
         font-weight: thin;
         text-transform: uppercase;
       }
       
       #main-doc header {
         text-align: left;
-        margin: 0px;
+        font-size: 1.4em;
+        font-weight: thin;
+        text-transform: uppercase;
       }
       
       #navbar ul {
@@ -59,37 +68,59 @@
         position: absolute;
         top: 8vh;
         left: 15vw;
-        padding: 20px;
+        padding: 2rem 0 2rem 2rem;
         background-color: #282828;
         color: #fafafa;
       }
 
-      section,
-      main section header {
-            margin: 3rem 5rem;
-            padding: 3rem 10rem 1rem 1rem;
-            font-weight: 800;          
+      .main-section {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row: 1fr auto;
+
+        >header {
+          display: flex;
+          flex-direction: column;
+          padding: 5rem 5rem 3rem;
+          font-weight: 800;   
+          
+          .image {
+            margin: 2rem 0;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+          }
+  }
+
+  article {
+    padding: 5rem 5rem 3rem;
+
+  .og-era {
+      color: var(--color-txtSnd);
+      font-weight: 800;
+      
+      
     }
 
-    .og-era {
-        color: var(--color-txtSnd);
-      }
-      
-      section article {
-        color: #e5e5dc;
-        margin: 15px;
+    p {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
 
-        p {
-          font-size: 1.2rem;
-          font-weight: 200;
-        }
-       
+    
+    
+    section li {
+      margin: 15px 0px 0px 20px;
+     
+    }
+  }
       }
+     
+
       
-      section li {
-        margin: 15px 0px 0px 20px;
-       
-      }
       
       @media only screen and (max-width: 900px) {
         

@@ -13,7 +13,7 @@ const Home = () => {
                 <h1 className="sub-header">Locker Legends website since 2004!</h1>
             </section>
             
-            <article>
+            <article className="home-article">
             
                 <h2>Review & Purpose</h2>
                 <h3>  
