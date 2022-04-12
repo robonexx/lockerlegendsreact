@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar/Navbar'
-import HallOfFame from './pages/HallOfFame'
+/* import HallOfFame from './pages/HallOfFame' */
+import HallOfFameTest from './pages/HallOfFameTest'
 import History from './pages/History'
 import Articles from './pages/Articles'
 /* import Loading from './components/loading/Loading' */
@@ -71,8 +72,8 @@ useEffect (() =>{
               <Route path="/articles">
                 <Articles/>
               </Route>
-              <Route path="/halloffame">
-                <HallOfFame />
+              <Route path="/halloffametest">
+                <HallOfFameTest />
               </Route>
               <Route path="/contacts">
                 <h1>Contacts</h1>

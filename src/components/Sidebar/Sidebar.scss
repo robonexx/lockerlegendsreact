@@ -1,0 +1,33 @@
+#navbar {
+    position: fixed;
+    top: 6rem;
+    left: 0px;
+    width: 15vw;
+    height: calc(100% - 4rem);
+    overflow-y: scroll;
+    border-right: solid;
+    border-color: rgb(255, 255, 255);
+    background-color: #121212;
+
+     ul {
+        height: 100%;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      
+      li {
+        color: #282828;
+        border-top: 1px solid #f4f4f8;
+        list-style: none;
+        position: relative;
+        width: 100%;
+      }
+      
+      a {
+        display: block;
+        padding: 10px 30px;
+        color: #e5e5dc;
+        text-decoration: none;
+        cursor: pointer;
+      }
+  }

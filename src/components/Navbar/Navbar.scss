@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 8vh;
+  height: 6rem;
   background: var(--color-bg);
   z-index: 10;
   color: #f4f4f4;
@@ -19,11 +19,9 @@
 .logo {
   position: relative;
   margin-left: 4rem;
-  font-size: 2.4rem;
-  width: fit-content;
-  color: var(--color-bg);
+  width: 300px;
+  object-fit: cover;
   z-index: 100;
-  background: var(--color-txtSnd);
   text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.4);
   padding: 0.1rem 1rem;
   border-radius: 2px;

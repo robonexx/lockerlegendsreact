@@ -1,53 +1,34 @@
 import React from 'react';
 import './HallOfFame.scss'
-import Scoob from '/images/scoobdoo.jpg'
-import Mave from '/images/mavericksflat.png'
-import Watts from '/images/watts.jpg'
-import Don from '/images/campbell.jpg'
-import Damita from '/images/damita.jpg'
-import Tony from '/images/tony.jpg'
-import Greg from '/images/greg.jpg'
-import Skeeter from '/images/skeeter.jpg'
+/* import Scoob from '../assets/scoobdoo.jpg'
+import Mave from '../assets/mavericksflat.png'
+import Watts from '../assets/watts.jpg'
+import Don from '../assets/campbell.jpg'
+import Damita from '../assets/damita.jpg'
+import Tony from '../assets/tony.jpg'
+import Greg from '../assets/greg.jpg'
+import Skeeter from '../assets/skeeter.jpg' */
+import Sidebar from '../components/Sidebar/Sidebar';
+import Hof from '../components/hof/Hof';
+
+// get content for page 
 
 const HallOfFame = () => {
 
     return ( 
 
-        <div className="hof">
-            <nav id="navbar">
-        <header id="header">Menu</header>
-        <ul>
-          <li><a className="nav-link" href="#Introduction"><b>Introduction</b></a></li>
-          <li>
-            <a className="nav-link" href="#The_term_OG"
-              ><b>The term OG</b></a
-            >
-          </li>
-          <li>
-            <a className="nav-link" href="#Don_Campbell"><b>Don Campbell</b></a>
-          </li>
-          <li><a className="nav-link" href="#Damita_Jo_Freeman"><b>Damita Jo Freeman</b></a></li>
-          <li><a className="nav-link" href="#Greg_Pope"><b>Greg Pope</b></a></li>
-          <li><a className="nav-link" href="#Fred_Berry"><b>Fred Berry</b></a></li>
-          <li>
-            <a className="nav-link" href="#Leo_Williams"><b>Leo Williams</b></a>
-          </li>
-          <li><a className="nav-link" href="#Jimmy_Foster"><b>Jimmy Foster</b></a></li>
-          <li><a className="nav-link" href="#James_Higgins"><b>James Higgins</b></a></li>
-          <li><a className="nav-link" href="#Arnetta_Johnson"><b>Arnetta Johnson</b></a></li>
-          <li><a className="nav-link" href="#Anthony_Lewis"><b>Anthony Lewis</b></a></li>
-          <li><a className="nav-link" href="#Others"><b>Others</b></a></li>
-          </ul>
-      </nav>
+      <div className="hof">
+        <Sidebar />
         <main id="main-doc">
           <h1 className="hof-title">O.G pioneers hall of fame</h1>
 
-        <section className="main-section" id="Introduction">
+          <Hof />
+        {/* <div className="main-section" id="Introduction">
             <header>Introduction
             <img src={Mave} className="image" alt="" />
             </header>
             
-          <article>
+          <div className='article'>
               <header>
                 <b className="og-era">
                 THE ORIGINAL ERA HALL OF FAME
@@ -60,8 +41,8 @@ const HallOfFame = () => {
                 YES There are many people with different levels of contributions to the history of the art, And lockerlegends looks forward to expanding our Hall to include various phases of contributions, but these are some the ORIGINAL, main & true old school pioneers who contributed steps, style and the attitude which created and contributed to the evolution of the entire sub-culture we know as “Locking”
             </p>
             
-          </article>
-          </section>
+          </div>
+          </div>
           
         <section className="main-section" id="The_term_OG">
             <header>The term OG
@@ -232,7 +213,7 @@ const HallOfFame = () => {
             </ul>
       
           </article>
-        </section>
+        </section> */}
       </main>
         </div>
 
