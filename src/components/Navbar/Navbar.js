@@ -1,36 +1,87 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/LL_LOGO_clean.png';
 import './Navbar.scss';
+import DropDown from './DropDown';
+import { FiMenu } from 'react-icons/fi';
+import { FiX } from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
   return (
-    <div>
-      <nav className='Navbar'>
-        {/* <h3 className="logo">LOCKERLEGENDS</h3> */}
-        <img src={Logo} className='logo' alt='logo' />
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>about</Link>
-          </li>
-          <li>
-            <Link to='/history'>history</Link>
-          </li>
-          <li>
-            <Link to='/articles'>articles</Link>
-          </li>
-          <li>
-            <Link to='/halloffametest'>Hof</Link>
-          </li>
-          <li>
-            <Link to='/contacts'>contacts</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className='navbar'>
+      <div className='menu-icon' onClick={handleClick}>
+        <div>
+          {click ? (
+            <FiX className='nav-icon' />
+          ) : (
+            <FiMenu className='nav-icon' />
+          )}
+        </div>
+      </div>
+      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <li className='nav-item'>
+          <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+            Home
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+            about
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/history' className='nav-links' onClick={closeMobileMenu}>
+            history 
+          </Link>
+        </li>
+        <li
+          className='nav-item'
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        >
+          <Link to='/articles' className='nav-links' onClick={closeMobileMenu}>
+            articles<FiChevronDown />
+          </Link>
+          {dropdown && <DropDown />}
+        </li>
+        <li className='nav-item'>
+          <Link
+            to='/halloffametest'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Hof
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+            contacts
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

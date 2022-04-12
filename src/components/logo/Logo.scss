@@ -1,0 +1,11 @@
+.logo {
+    margin-left: 4rem;
+    z-index: 100;
+    text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.4);
+    padding: 0.1rem 1rem;
+    border-radius: 2px;
+
+    >img {
+        width: 400px;
+    }
+  }

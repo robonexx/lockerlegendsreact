@@ -1,6 +1,6 @@
 .hof {
   display: flex;
-  margin-top: 4rem;
+  margin-top: 8rem;
   width: 100vw;
    height: 100%;
     
@@ -14,7 +14,7 @@
       top: 0;
       left: 15vw;
       
-      background-color: #020202;
+      background-color: var(--color-bg);
       color: #fafafa;
       width: 85vw;
       min-height: 100vh;
@@ -106,8 +106,9 @@
           
           .image {
             margin: 2rem 0;
-            width: 300px;
+            width: 380px;
             height: 300px;
+            background-position: center;
             object-fit: cover;
             object-position: center;
           }

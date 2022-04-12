@@ -8,7 +8,7 @@ const Home = () => {
         <div className="homeMain">
             <section className="homeSection">
                 <h3>Welcome to</h3>
-                <h1 className="header">LOCKERLEGENDS</h1>
+                <h1 className="headline">LOCKERLEGENDS</h1>
 
                 <h1 className="sub-header">Locker Legends website since 2004!</h1>
             </section>
