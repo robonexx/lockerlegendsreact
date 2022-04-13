@@ -111,6 +111,7 @@ export const pioneers = [
   },
   {
     name: 'Adolfo Quinones',
+    aka: 'Shabba-Doo',
     desc: 'Originally from Chicago, one of the Original members of The Lockers Group. He was also known for his charactor “O Zone” in the “Breaking movies. Shab was one of the last to be introduced into the original locking circuit in 1973.Two years after the evolutionary stage had began. but He quicky became one of the quickest and smoothest dancers around. His first nickname was “King Rookie” because of his ability to absorb routeins at a quick pace.',
     href: '#Adolfo_Quinones',
     url: '',
@@ -140,6 +141,7 @@ export const pioneers = [
   },
   {
     name: 'Freddie Maxie',
+    aka: 'Freddie Maxie',
     desc: 'She was an early street dancer from the Compton street dance era,who became a soul train dancer , and has been the dance partner to many legendary Lockers, she was one of the earliest Female Lockers , who spent time both in the clubs, street parties and in various performance groups like “something special” & “The soul Train Gang”',
     href: '#Freddie_Maxie',
     url: '',
@@ -169,7 +171,7 @@ export const pioneers = [
   },
   {
     name: 'Toni Basil',
-    aka: ' ',
+    aka: 'Toni',
     desc: 'She was an already accomplished choreograher when she learned to lock from Don Campbell and was an organizing force in development of the Group the “Original Lockers”.  Toni had an extensive ballet background and eventually became the only female in the original Lockers Group, although Basil is not from the Original Movement of Locking her contribution as a manager should be acknowledged, without her connections and showbussiness expierience the Lockers would not have been able to obtain the professional , or reach the commercial Level of acceptance as they did, she is most noted for incorperating her ballet into locking and her continuous spins.',
     href: '#Toni_Basil',
     url: '',

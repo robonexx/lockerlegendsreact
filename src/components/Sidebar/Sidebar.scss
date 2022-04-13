@@ -29,3 +29,32 @@
         cursor: pointer;
       }
   }
+
+  @media screen and (max-width: 960px) {
+  
+    #navbar {
+      background-color: #121212;
+      position: fixed;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 225px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+
+    #navbar ul {
+      border: 1px solid;
+      height: 100%;
+    }
+
+    #navbar a {
+      display: block;
+      padding: 0 20px;
+      color: #e5e5dc;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }

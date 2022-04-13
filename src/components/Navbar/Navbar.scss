@@ -25,28 +25,26 @@
   width: 70%;
   list-style: none;
 }
-
-.Navbar ul li {
+*/
+ .Navbar ul li {
   
   font-size: 1.4rem;
   text-transform: uppercase;
   padding: 0.75rem 1rem;
-}
+} 
 
-*/
+
 .navbar ul li a {
-  
   font-weight: 200;
   color: var(--color-txt);
   text-decoration: none;
-  
   position: relative;
 }
 
 .navbar ul li a:before {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 98%;
   bottom: 0;
   left: 100%;
   right: 100%;
@@ -55,27 +53,33 @@
 
 .navbar .nav-item:nth-of-type(1) a:before {
   background: var(--color-home);
+  border-radius: 25px;
 }
 .navbar ul li:nth-of-type(2) a:before {
   background: var(--color-about);
+  border-radius: 25px;
 }
 .navbar ul li:nth-of-type(3) a:before {
   background: var(--color-history);
+  border-radius: 25px;
 }
 .navbar ul li:nth-of-type(4) a:before {
   background: var(--color-articles);
+  border-radius: 25px;
 }
 .navbar ul li:nth-of-type(5) a:before {
   background: var(--color-halloffame);
+  border-radius: 25px;
 }
 .navbar ul li:nth-of-type(6) a:before {
   background: var(--color-contacts);
+  border-radius: 25px;
 }
 
 .navbar ul li a:hover:before {
-  bottom: -1px;
-  left: 0;
-  right: 0;
+  bottom: -2px;
+  left: 6px;
+  right: 6px;
 }
 
 .navbar {
@@ -110,7 +114,6 @@
 
 .nav-links {
   position: relative;
-  color: rgb(129, 28, 28);
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
@@ -130,99 +133,96 @@
 
 .menu-icon {
   display: none;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 1000;
   cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
-   .fa-caret-down{
-      display: none;
-   }
-   
-  .NavbarItems {
-    position: relative;
+  .navbar {
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    width: 6rem;
+    z-index: 10;
+    font-family: var(--font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
   }
+   
 
   .nav-menu {
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 90vh;
-    position: absolute;
-    top: 80px;
-    left: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(120%);
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 100;
+    z-index: 1000;
   }
 
   .nav-menu.active {
-    position: absolute;
-    background: #242222;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    margin: auto;
     left: 0;
     top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #242222;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
 
   .nav-links {
-    text-align: center;
-    padding: 2rem;
+    margin: 2rem auto;
     width: 100%;
-    display: table;
+    display: block;
   }
 
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: transparent;
     border-radius: 0;
   }
 
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+  .navbar ul li a:hover:before {
+    bottom: -1px;
+    left: 45%;
+    right: 45%;
   }
 
   .menu-icon {
-    display: block;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    padding: 0.5rem 0.75rem; 
+    border-radius: 50%;
+    background-color: black;
     top: 2rem;
-    right: 2rem;
-    z-index: 1000;
+    right: 4rem;
+    z-index: 1100;
     cursor: pointer;
   }
 
   .nav-icon {
+    padding-top: 0.25rem;
     color: #fff;
     font-size: 2rem;
   }
 
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    background: #1888ff;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #1888ff;
-    transition: 250ms;
-  }
+  .arrow-icon {
+    display: none;
+ }
 }

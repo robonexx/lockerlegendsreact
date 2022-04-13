@@ -8,3 +8,126 @@
         filter: grayscale(100%);
     }
 }
+
+.main-section {
+    margin-top: 5rem;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: 1fr auto;
+
+    header {
+        text-align: left;
+        font-size: 1.4em;
+        font-weight: thin;
+        text-transform: uppercase;
+      }
+
+    >.left-side {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 5rem 3rem 3rem;
+      font-weight: 800;   
+
+      h2 {
+          color: #eeeeee;
+          text-shadow: 0 4px 3px rgba(0,0,0,.825);
+      }
+      
+      .image {
+        margin: 2rem 0;
+        width: 380px;
+        height: 300px;
+        background-position: center;
+        object-fit: cover;
+        object-position: center;
+      }
+}
+
+.content {
+max-width: 800px;
+padding: 8rem 4rem 2rem 0;
+
+.og-era {
+  color: #E45D03;
+  font-weight: 800;
+  
+  
+}
+
+.text {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+
+
+section li {
+  margin: 15px 0px 0px 20px;
+ 
+}
+}
+}
+
+
+@media screen and (max-width: 960px) {
+    .main-section {
+        margin-top: 5rem;
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row: 1fr auto;
+    
+        header {
+            text-align: left;
+            font-size: 1.4em;
+            font-weight: thin;
+            text-transform: uppercase;
+          }
+    
+        >.left-side {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 5rem 3rem 3rem;
+          font-weight: 800;   
+    
+          h2 {
+              color: #eeeeee;
+              text-shadow: 0 4px 3px rgba(0,0,0,.825);
+          }
+          
+          .image {
+            margin: 2rem 0;
+            width: 380px;
+            height: 300px;
+            background-position: center;
+            object-fit: cover;
+            object-position: center;
+          }
+    }
+    
+    .content {
+    max-width: 800px;
+    padding: 8rem 4rem 2rem 0;
+    
+    .og-era {
+      color: #E45D03;
+      font-weight: 800;
+      
+      
+    }
+    
+    .text {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
+    }
+}
+    
+   }

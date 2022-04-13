@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/images/LL_LOGO_clean.png';
 import './Navbar.scss';
 import DropDown from './DropDown';
 import { FiMenu } from 'react-icons/fi';
@@ -62,7 +61,7 @@ const Navbar = () => {
           onMouseLeave={onMouseLeave}
         >
           <Link to='/articles' className='nav-links' onClick={closeMobileMenu}>
-            articles<FiChevronDown />
+            articles<FiChevronDown className='arrow-icon' />
           </Link>
           {dropdown && <DropDown />}
         </li>
