@@ -1,16 +1,16 @@
 export const navItems = [
   {
-    title: 'item1',
+    title: 'Page drop',
     path: '/item1',
     cName: 'dropdown-link',
   },
   {
-    title: 'item2',
+    title: 'Page drop',
     path: '/item2',
     cName: 'dropdown-link',
   },
   {
-    title: 'item3',
+    title: 'Page drop',
     path: '/item3',
     cName: 'dropdown-link',
   },
