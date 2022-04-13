@@ -10,7 +10,7 @@
 }
 
 .main-section {
-    margin-top: 5rem;
+    margin: 0;
     padding: 5rem 0;
     display: grid;
     grid-template-columns: auto auto;
@@ -28,12 +28,13 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-      padding: 5rem 3rem 3rem;
+      padding: 5rem 8rem 3rem;
       font-weight: 800;   
 
       h2 {
           color: #eeeeee;
           text-shadow: 0 4px 3px rgba(0,0,0,.825);
+          font-size: 2rem;
       }
       
       .image {
@@ -48,11 +49,12 @@
 
 .content {
 max-width: 800px;
-padding: 8rem 4rem 2rem 0;
+padding: 8rem 6rem 2rem 0;
 
 .og-era {
   color: #E45D03;
   font-weight: 800;
+  font-size: 2rem;
   
   
 }
@@ -74,60 +76,87 @@ section li {
 
 
 @media screen and (max-width: 960px) {
-    .main-section {
-        margin-top: 5rem;
-        padding: 5rem 0;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-row: 1fr auto;
-    
+    .main-section {       
+        padding: 10rem 0 0;
+           
         header {
             text-align: left;
-            font-size: 1.4em;
+            font-size: 1.4rem;
             font-weight: thin;
             text-transform: uppercase;
           }
     
         >.left-side {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
-          flex-direction: column;
-          padding: 5rem 3rem 3rem;
-          font-weight: 800;   
     
           h2 {
-              color: #eeeeee;
-              text-shadow: 0 4px 3px rgba(0,0,0,.825);
+              margin-left: 1rem;
+              font-size: 1.5rem;
           }
           
           .image {
-            margin: 2rem 0;
-            width: 380px;
-            height: 300px;
-            background-position: center;
-            object-fit: cover;
-            object-position: center;
+            width: 280px;
+            height: 280px;
           }
     }
     
     .content {
-    max-width: 800px;
+    max-width: 100%;
     padding: 8rem 4rem 2rem 0;
     
     .og-era {
-      color: #E45D03;
-      font-weight: 800;
-      
-      
+      font-size: 1rem;
     }
     
     .text {
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      font-weight: 200;
+      font-size: 1rem;
     }
     }
 }
     
+   }
+
+   @media screen and (max-width: 460px) {
+
+    .hof-wrapper {
+        position: absolute;
+        top: 20vh;
+    }
+    .main-section {       
+        padding: 6rem 0 0;
+        display: flex;
+        flex-direction: column;
+           
+        header {
+            text-align: left;
+            font-size: 1.4rem;
+            font-weight: thin;
+            text-transform: uppercase;
+          }
+    
+        >.left-side {
+            padding: 6rem 0 0;
+          h2 {
+              font-size: 1.5rem;
+          }
+          
+          .image {
+              border-radius: 0;
+            width: 100%;
+            height: 240px;
+          }
+    }
+    
+    .content {
+    width: 100%;
+    padding: 0 2rem;
+    
+    .og-era {
+      font-size: 1rem;
+    }
+    
+    .text {
+      font-size: 0.9rem;
+    }
+    }
+}
    }

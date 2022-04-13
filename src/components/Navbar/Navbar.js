@@ -4,7 +4,6 @@ import './Navbar.scss';
 import DropDown from './DropDown';
 import { FiMenu } from 'react-icons/fi';
 import { FiX } from 'react-icons/fi';
-import { FiChevronDown } from 'react-icons/fi';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -61,7 +60,7 @@ const Navbar = () => {
           onMouseLeave={onMouseLeave}
         >
           <Link to='/articles' className='nav-links' onClick={closeMobileMenu}>
-            articles<FiChevronDown className='arrow-icon' />
+            articles
           </Link>
           {dropdown && <DropDown />}
         </li>
