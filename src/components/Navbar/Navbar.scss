@@ -35,7 +35,7 @@
 
 
 .navbar ul li a {
-  font-weight: 200;
+  font-weight: 400;
   color: var(--color-txt);
   text-decoration: none;
   position: relative;
@@ -76,11 +76,16 @@
   border-radius: 25px;
 }
 
+
 .navbar ul li a:hover:before {
   bottom: -2px;
   left: 6px;
   right: 6px;
 }
+.navbar ul li:nth-of-type(6) a:hover:before {
+ opacity: 0;
+}
+
 
 .navbar {
   position: sticky;
@@ -100,7 +105,7 @@
   list-style: none;
   text-align: center;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   margin-right: 2rem;
 }
 
@@ -119,10 +124,10 @@
   text-transform: uppercase;
 }
 
-.nav-links:hover {
+/* .nav-links:hover {
   border-radius: 4px;
   transition: all 0.2s ease-out;
-}
+} */
 
 .nav-icon {
   color: #fff;
@@ -135,6 +140,18 @@
 .menu-icon {
   display: none;
   cursor: pointer;
+}
+
+.nav-links.contact {
+  background: var(--color-articles);
+  border-radius: 25px;
+  font-weight: 800;
+  transition: background 0.4s ease-in-out;
+  margin: 0 10px;
+}
+.nav-links.contact:hover {
+  background: var(--color-btnContactHover);
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 960px) {

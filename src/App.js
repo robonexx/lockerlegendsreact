@@ -1,6 +1,6 @@
 import './App.scss';
 import React, { /* useState, useEffect  */} from 'react';
-import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import About from './pages/About'
 import Header from './components/header/Header'
@@ -11,10 +11,10 @@ import Articles from './pages/Articles'
 import Item1 from './pages/Item1';
 import Item2 from './pages/Item2';
 import Item3 from './pages/Item3';
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 /* import Loading from './components/loading/Loading' */
 
 function App() {
-
   /* const [loading, setLoading] = useState(true) */
 
   /* useEffect(() => {
@@ -54,6 +54,7 @@ useEffect (() =>{
   return (
     <Router>
       <div className="App">
+        <ScrollToTop>
         {/* { loading ?
           <div>
             <Loading loading={loading} setLoading={setLoading} />
@@ -61,7 +62,7 @@ useEffect (() =>{
           : */}
           <div>
             <Header />
-            <Switch>
+            <Switch >
               <Route exact path="/">
                 {/* <h1>HOME</h1> */}
                 <Home />
@@ -94,7 +95,7 @@ useEffect (() =>{
 
             </Switch>
           </div>
-        {/* } */}
+          </ScrollToTop>
     </div>
     </Router>
   );

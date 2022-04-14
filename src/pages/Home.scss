@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: var(--font);
 }
 
 .homeSection {
@@ -17,9 +18,8 @@
 
   
   > h3 {
-    font-size: 4rem;
-    font-weight: 100;
-    font-style: italic;
+    font-size: 3rem;
+    font-weight: 400;
     color: var(--color-articles);
   }
   .headline {
@@ -30,9 +30,8 @@
   }
 
     .sub-header {
-      font-size: 4rem;
-      font-weight: 100;
-      font-style: italic;
+      font-size: 3rem;
+      font-weight: 400;
     }
 }
 
@@ -43,13 +42,14 @@
 
   
   h2 {
+    font-size: 2rem;
     margin: 5rem auto 5rem;
     color: #fff;
   }
 
   h3 {
-    font-size: 2rem;
-    color: #fafafa;
+    font-size: 1.5rem;
+    color: var(--color-articles);
     font-weight: 800;
     font-style: italic;
   }
@@ -58,7 +58,7 @@
     color: #fff;
     font-size: 1.2rem;
     line-height: 2rem;
-    font-weight: 100;
+    font-weight: 400;
   }
 }
 
