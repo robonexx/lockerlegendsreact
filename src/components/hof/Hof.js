@@ -5,6 +5,8 @@ import { pioneers } from '../../content/pioneers';
 import './Hof.scss'
 
 export default function Hof() {
+
+  
   return (
     <div className='hof-wrapper'>
       {pioneers.map(({ name, desc, aka, id, img }) => (

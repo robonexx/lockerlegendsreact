@@ -191,10 +191,11 @@ export const pioneers = [
   },
   {
     name: 'Others',
-    desc: 'Kevin “YoYo” Lombard :see the GoGo Brothers page,\n Eugine Henderson “F&M”,\n Steve Crane ” Sinbad” see:The Ghetto dancers,\n Greg Dandridge “Captain,\n Crunch”see The Ghetto Dancers,\n Mike Frenke “Peekaboo” see: 33rpm & YoYo brothers,\n Guy Evan “Shocklock”,\n John “OkieDoke” Wilson see 33rpm,\n Jeffrey Daniel,\n Tito Collins see: The Alphebet kids & 33rom,\n Jeffery McKintire “Cat Man”,\n Bishop “CoCo” Hall,\n Tick, Sneaky T,\n Enock “Elmer Fud” Smith (RIP),\n',
+    aka: '(Image is not connected to the names',
+    desc: 'Kevin “YoYo” Lombard :see the GoGo Brothers page, \n Eugine Henderson “F&M”,\n Steve Crane ” Sinbad” see:The Ghetto dancers,\n Greg Dandridge “Captain,\n Crunch”see The Ghetto Dancers,\n Mike Frenke “Peekaboo” see: 33rpm & YoYo brothers,\n Guy Evan “Shocklock”,\n John “OkieDoke” Wilson see 33rpm,\n Jeffrey Daniel,\n Tito Collins see: The Alphebet kids & 33rom,\n Jeffery McKintire “Cat Man”,\n Bishop “CoCo” Hall,\n Tick, Sneaky T,\n Enock “Elmer Fud” Smith (RIP),\n',
     href: '#Others',
     url: '',
-    img: '',
+    img: '/images/others.png',
     cName: 'nav-link',
     id: 'Others',
   },
