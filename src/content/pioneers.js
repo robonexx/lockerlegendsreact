@@ -115,7 +115,7 @@ export const pioneers = [
     desc: 'Originally from Chicago, one of the Original members of The Lockers Group. He was also known for his charactor “O Zone” in the “Breaking movies. Shab was one of the last to be introduced into the original locking circuit in 1973.Two years after the evolutionary stage had began. but He quicky became one of the quickest and smoothest dancers around. His first nickname was “King Rookie” because of his ability to absorb routeins at a quick pace.',
     href: '#Adolfo_Quinones',
     url: '',
-    img: '/images/shabbadoo.png',
+    img: '/images/Shabbadoo.png',
     cName: 'nav-link',
     id: 'Adolfo_Quinones',
   },
