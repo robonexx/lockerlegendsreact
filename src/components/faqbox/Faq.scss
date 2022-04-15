@@ -12,7 +12,7 @@
     padding: 30px;
     position: relative;
     overflow: hidden;
-    transition: 0.4s ease;
+    transition: 0.4s ease-in-out;
   }
   
   .faq.active {
@@ -85,7 +85,7 @@
     display: none;
   }
   .faq.active .faq-toggle {
-   background-color: #282828;
+   background-color: var(--color-txtSnd);
    
   }
 
