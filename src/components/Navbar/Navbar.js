@@ -56,6 +56,24 @@ const Navbar = () => {
             history
           </Link>
         </li>
+        <li className='nav-item'>
+          <Link
+            to='/halloffametest'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Hof
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link
+            to='/stepsandmoves'
+            className='nav-links'
+            onClick={closeMobileMenu}
+          >
+            Steps & Moves
+          </Link>
+        </li>
         <li
           className='nav-item'
           /*  onMouseEnter={onMouseEnter}
@@ -66,15 +84,7 @@ const Navbar = () => {
           </Link>
           {/* {dropdown && <DropDown />} */}
         </li>
-        <li className='nav-item'>
-          <Link
-            to='/halloffametest'
-            className='nav-links'
-            onClick={closeMobileMenu}
-          >
-            Hof
-          </Link>
-        </li>
+        
         <li className='nav-item'>
           <Link to='/contact' className='nav-links contact' onClick={closeMobileMenu}>
             contact

@@ -12,6 +12,7 @@ import Item1 from './pages/Item1';
 import Item2 from './pages/Item2';
 import Item3 from './pages/Item3';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import StepsAndMoves from './pages/stepsandmoves/StepsAndMoves';
 /* import Loading from './components/loading/Loading' */
 
 function App() {
@@ -73,6 +74,12 @@ useEffect (() =>{
               <Route path="/history">
                 <History />
               </Route>
+              <Route path="/halloffametest">
+                <HallOfFameTest />
+              </Route>
+              <Route path="/stepsandmoves">
+                <StepsAndMoves />
+              </Route>
               <Route path="/item1">
                 <Item1 />
               </Route>
@@ -85,9 +92,7 @@ useEffect (() =>{
               <Route path="/articles">
                 <Articles/>
               </Route>
-              <Route path="/halloffametest">
-                <HallOfFameTest />
-              </Route>
+              
               <Route path="/contact">
                 <h1>Contacts</h1>
               </Route>

@@ -68,11 +68,15 @@
   border-radius: 25px;
 }
 .navbar ul li:nth-of-type(5) a:before {
-  background: var(--color-halloffame);
+  background: pink;
   border-radius: 25px;
 }
 .navbar ul li:nth-of-type(6) a:before {
-  background: var(--color-contacts);
+  background: rgb(46, 233, 233);
+  border-radius: 25px;
+}
+.navbar ul li:nth-of-type(7) a:before {
+  background: transparent;
   border-radius: 25px;
 }
 
@@ -82,7 +86,7 @@
   left: 6px;
   right: 6px;
 }
-.navbar ul li:nth-of-type(6) a:hover:before {
+.navbar ul li:nth-of-type(7) a:hover:before {
  opacity: 0;
 }
 
