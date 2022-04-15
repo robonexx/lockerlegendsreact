@@ -18,7 +18,7 @@ export default function Hof() {
 
           <div className='content'>
             <header>
-              <b className='og-era'>Aka: {aka}</b>
+              <b className='og-era'>{aka}</b>
             </header>
 
             <div className='text'>{desc}</div>

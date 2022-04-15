@@ -28,7 +28,7 @@ const Home = () => {
                     Since the inception of this website sight in 2004, We are proud that we have been instrumental in the knowledge and awareness of todays locking community, We now see many quotes, and post involving our writings ,teachings and concepts all over the world. Just google locking history & there is probably something taken directly from our website posted there. <br/><br/>
                     We were happy to be involved in the first Full week camps taught by original generation Lockers in 2005,
                     We are happy to see Full Locking camps now in existence, with the inclusion of multiple  original era Pioneers,
-                    We were happy to have connected, The LEGENDARY dance and educational television show “SOUL TRAIN” train, and its  social party dancing with the foundation of locking. <br/>
+                    We were happy to have connected, The LEGENDARY dance and educational television show “SOUL TRAIN” train, and its  social party dancing with the foundation of locking. <br/><br/>
                     We are proud yo have conducted The FIRST ever Social Party Dance class in 2005, TODAY  we see Social Party Dance classes ( which are called Soul Dances ) taught all over the world,
                     We were happy to introduce the world to the awareness of Locking before the commercial & performance locking, which has open an international  awareness to Locking & its connection to its streets, Now we see Locking accepted with the other street forms at events all over the world.
                     <br /><br/>

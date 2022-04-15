@@ -85,7 +85,7 @@ export const pioneers = [
     desc: 'Is an early Soul Train Dancer and member of several early locking groups. The Original Go-Go Brothers 1971 to 1973, Watts Writers  “Creative Generation” 1972 to 1973 and the Original Lockers 1973 to 1974. He also danced with the Ghetto Dancers in 1975 and was also known as an outstanding master robot. He later organized and toured with the Locking group 33rpm in late 1975.  He was most known for his creation of the dance step done in most syncronized locking routines called “The skeeterrabbit”.',
     href: '#James_Higgins',
     url: '',
-    img: '/images/skeet.png',
+    img: '/images/Skeet.png',
     cName: 'nav-link',
     id: 'James_Higgins',
   },

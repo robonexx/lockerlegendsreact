@@ -38,7 +38,7 @@
 .home-article {
   position: relative;
   margin: 10rem auto 10rem;
-  padding: 1rem 20rem;
+  padding: 1rem 15rem;
 
   
   h2 {
@@ -78,12 +78,10 @@
     > h3 {
       font-size: 2rem;
       font-weight: 100;
-      font-style: italic;
       color: var(--color-articles);
     }
     .headline {
       margin: 1rem auto;
-      font-family: var(--big-font);
       font-size: 2rem;
       color: var(--color-txt);
     }
@@ -91,7 +89,6 @@
       .sub-header {
         font-size: 1rem;
         font-weight: 100;
-        font-style: italic;
       }
   }
   
@@ -108,16 +105,15 @@
   
     h3 {
       font-size: 0.9rem;
-      color: #fafafa;
       font-weight: 800;
-      font-style: italic;
+      color: var(--color-articles);
     }
   
     p {
       color: #fff;
       font-size: 0.8rem;
       line-height: 1.2rem;
-      font-weight: 100;
+      font-weight: 400;
     }
   }
 
