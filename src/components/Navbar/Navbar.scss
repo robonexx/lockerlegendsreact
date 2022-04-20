@@ -194,7 +194,7 @@
     margin: auto;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     transform: translateX(0);
     display: flex;
@@ -204,7 +204,7 @@
     background: #242222;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 1000;
   }
 
   .nav-links {
