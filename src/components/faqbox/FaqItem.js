@@ -18,7 +18,9 @@ export default function FaqItem({ name, desc, id }) {
         )}
       </button>
       <h3 className='faq-title'>{name}</h3>
-      <p className='faq-text'>{desc}</p>
+      <div className='faq-text'>
+        <p>{desc}</p>
+      </div>
     </li>
   );
 }
