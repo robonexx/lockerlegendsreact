@@ -6,17 +6,28 @@
     border-radius: 2px;
 
     >img {
-        width: 400px;
+        width: 300px;
     }
   }
 
   @media screen and (max-width: 960px) {
   
    .logo {
-       margin-left: 2rem;
+       margin: 0 2rem;
 
        >img {
-           width: 60%;
+           width: 35%;
+       }
+   }
+  }
+
+  @media screen and (max-width:40em) {
+  
+   .logo {
+       margin: 0 0.5rem;
+
+       >img {
+           width: 50%;
        }
    }
   }

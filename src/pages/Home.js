@@ -1,48 +1,62 @@
 import React from 'react';
-import './Home.scss'
+import { Link } from 'react-router-dom';
+import './Home.scss';
 
 const Home = () => {
+  return (
+    <div className='home-main'>
+      <section className='home-section'>
+        <h3>Welcome to</h3>
+        <h1 className='headline'>LOCKERLEGENDS</h1>
 
-    return ( 
+        <h1 className='sub-header'>
+          OFFICIAL “LOCKING” PIONEERS WEBSITE of the street dance pioneers
+        </h1>
+      </section>
 
-        <div className="homeMain">
-            <section className="homeSection">
-                <h3>Welcome to</h3>
-                <h1 className="headline">LOCKERLEGENDS</h1>
+      <article className='home-article'>
+        <h2>
+        EDUCATE B4U RECREATE
+        </h2>
+        <h3>
+        OVER 15 years Lockerlegends have served your Locking educational need
+        </h3>
+        <br />
+        <p>
+          THE ART-FORM & CULTURE OF A STREET DANCE IS MUCH MORE THAN THE MOVES
+          THAT CREATE THE DANCE ITSELF. <br /> THE ORIGINAL DANCE STYLE CALLED
+          LOCKING HAS DEEP ROOTS WITHIN A ERA, WHICH MENT SO MUCH TO THE UNITY
+          AND DE SEGREGATION OF A PEOPLE…READ…LEARN and understand what brought
+          about the evolution of words like soul and funk.. <br />
+          <br />
+          Understand the DANCERS that contributed to the Original foundation of
+          this dance & opened the door to what exist today as <br />
+          <br /> “THE STREET DANCE OF LOCKING” <br />
+          <br />
+          Help us solidify this from just a dance into a ART-FORM to be passed
+          down to future generations ! we have spent many hours & helped many
+          along the way & now would ask all who have benefitted & enjoyed our
+          site to take a few moments post a comment, about what the site has
+          meant to you on our Facebook Group Page. <br />- join our
+                  Lockerlegends Facebook page 
+          <Link
+            className='fb-page-link'
+            to={{ pathname: 'https://www.facebook.com/groups/158481954185947' }}
+            target='_blank'
+          >
+            CLICK HERE
+          </Link>
+          <br />
+          <br />
+          Then just ask to join the Lockerlegends /Lockers United Group, we
+          would love for you to share what you think about our website there.{' '}
+          <br />
+          <br />
+          ENJOY THE WEBSITE!
+        </p>
+      </article>
+    </div>
+  );
+};
 
-                <h1 className="sub-header">Locker Legends website since 2004!</h1>
-            </section>
-            
-            <article className="home-article">
-            
-                <h2>Review & Purpose</h2>
-                <h3>  
-                    Back in XXXX when we decided to create Lockerlegends, back when we saw a need in a then growing new locking community for education and the understanding of the importance of the historical history, concerning our wonderful world of Locking.
-                </h3>
-                <br/>
-                <p>
-                    We realized that many stories, and events in locking history were in accurate, because the true background and events surrounding its inception were  never documented or taught correctly, possibly because some of those who profited ,believed that the true history and inclusion of others would stifle their dominance of the dances history. <br/>
-                    We recognized the lack of of a wide vision from the many perspectives that produced the dance you see today. <br /><br />
-                    
-                    One of the most neglected issues was that of the cultural connection during the times when the Dance style was developed and its acceptance  into the commercial world as crossover entertainment. <br/>
-                    Since the inception of this website sight in 2004, We are proud that we have been instrumental in the knowledge and awareness of todays locking community, We now see many quotes, and post involving our writings ,teachings and concepts all over the world. Just google locking history & there is probably something taken directly from our website posted there. <br/><br/>
-                    We were happy to be involved in the first Full week camps taught by original generation Lockers in 2005,
-                    We are happy to see Full Locking camps now in existence, with the inclusion of multiple  original era Pioneers,
-                    We were happy to have connected, The LEGENDARY dance and educational television show “SOUL TRAIN” train, and its  social party dancing with the foundation of locking. <br/><br/>
-                    We are proud yo have conducted The FIRST ever Social Party Dance class in 2005, TODAY  we see Social Party Dance classes ( which are called Soul Dances ) taught all over the world,
-                    We were happy to introduce the world to the awareness of Locking before the commercial & performance locking, which has open an international  awareness to Locking & its connection to its streets, Now we see Locking accepted with the other street forms at events all over the world.
-                    <br /><br/>
-                    We exposed many early Lost Lockers & their stories & contributions to the world ,including Charles Robot , His exposure was of the utmost importance, because of his connection to Don Campbell (with the robot shuffle) This has allowed the world to understand the connection to Locking with the animated styles of Popping..Today we have seen a movement to connect the many styles of popping back to its  original roots of Northern California to Locking and Roboting, of Southern California.<br/><br/>
-                    We are happy to see that Locking & street dance is again connected to the term MOVEMENT, where we were one of the first to teach of the early movement of the 1960s & its connection to the purpose of Locking, today we see many new school movements , Like Soul Universal, Watts Soul & Locking4life who have taken our lead and with many conversations have again producing the purpose of unity to our dance… <br/><br/>
-                    We have fought and continue to fight the attempt to DISTORT this education, and the movement to proclaim Locking a African American Dance art form  as a racial separation , With the true education of its african american roots , to the true purpose of its acceptance by people of many races , creeds, color and religious backgrounds, showing that this dance had a original and continuing social purpose to unite and break down racial barriers , which go way beyond, its acceptance as marketable commercial entertainment <br/><br/>
-                    We have seen the uniting of the Original Era with the 1980s era, and later decades , all the way into the international scene, we have worked to explain the changes as this dance migrated without true documentation of a true foundational history  ,we now provide that from a educational & from first hand experience , In our effort to preserve,and the attempts to pass on this dance as not only a STYLE, but a true
-                    ARTFORM! <br/><br/>
-                    Today its + 18yrs years of this websites history
-                </p>
-                </article>
-        </div>
-
-     );
-}
- 
 export default Home;
