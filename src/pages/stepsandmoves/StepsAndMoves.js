@@ -4,8 +4,6 @@ import FaqList from '../../components/faqbox/FaqList';
 import './StepsAndMoves.scss';
 
 export default function StepsAndMoves() {
- 
-
   return (
     <div className='steps-wrapper'>
       <div className='container-top'>
@@ -18,15 +16,19 @@ export default function StepsAndMoves() {
         </h4>
         <h2>THE FOUNDATION</h2>
         <h4>
-           Many People are confused about what steps and moves
-          make up what we know as The Original Foundation of locking, Where and
-          how were they developed ? and why are they done the way that they are
-          ? …The following is a list of some of the basic moves steps and
-          gestures as they were developed by the various old school pioneers of
-          the locking era. Most of this foundation was developed between the
-          time Don Campbell introduced the first Locking movements in the early
+          Many People are confused about what steps and moves make up what we
+          know as The Original Foundation of locking
+          <br />
+          Where and how were they developed? & why are they done the way that
+          they are?
+          <br />
+          <br />
+          …The following is a list of some of the basic moves steps and gestures
+          as they were developed by the various old school pioneers of the
+          locking era. Most of this foundation was developed between the time
+          Don Campbell introduced the first Locking movements in the early
           1970s, and when the various Original Groups including the Lockers
-          refined their performances in 1974.We call this the EVOLUTIONARY
+          refined their performances in 1974. We call this the EVOLUTIONARY
           STAGE.. After those dates enthusiast developed groups and routines
           around the world. But most of their movements could only be based on
           quick visuals of what were thought to be the basics of the dance .
@@ -36,7 +38,7 @@ export default function StepsAndMoves() {
           artform and subculture of the dance affected the actual moves
           themselves. …
         </h4>
-        <h2>The very early stages of Locking</h2>
+        <h2>THE VERY EARLY STAGES OF LOCKING</h2>
         <h4>
           as Don Campbell exibited it back then, looked very different from
           today’s style it only comprised of.. Pacing or Timing, arm Locks,

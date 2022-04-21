@@ -1,36 +1,14 @@
 import React, { useState } from 'react';
 import LogoLoading from './LogoLoading';
-import './loading.scss'
-import { motion } from 'framer-motion'
-/* 
-const loadVariants = {
-    initial: {
-        opacity: 0,
+import './loading.scss';
+import { motion } from 'framer-motion';
 
-    },
-    visible: {
-        opacity: 1,
-        transition: {
-            duration: 5
-        },
-    }
-} */
+const Loading = ({ loading, setLoading }) => {
+  return (
+    <div className='loading'>
+      <LogoLoading loading={loading} setLoading={setLoading} />
+    </div>
+  );
+};
 
-const Loading = ({loading, setLoading}) => {
-    
-
-    return (
-        
-        <div className="loading"
-            /* variants={loadVariants}
-            initial="hidden"
-            animate="visible" */
-               
-            >
-            <LogoLoading loading={loading} setLoading={setLoading} />
-            </div>
-            
-     );
-}
- 
 export default Loading;
