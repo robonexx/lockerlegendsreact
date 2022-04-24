@@ -13,26 +13,26 @@ import Item2 from './pages/Item2';
 import Item3 from './pages/Item3';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import StepsAndMoves from './pages/stepsandmoves/StepsAndMoves';
-import Loading from './components/loading/Loading';
+/* import Loading from './components/loading/Loading'; */
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  /* const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3500);
-  }, []);
+  }, []); */
 
   return (
     <Router>
       <div className='App'>
         <ScrollToTop>
-          {loading ? (
+          {/* {loading ? (
             <div>
               <Loading loading={loading} setLoading={setLoading} />
             </div>
-          ) : (
+          ) : ( */}
             <div>
               <Header />
               <Switch>
@@ -71,7 +71,7 @@ function App() {
                 <Route exact path='*' component={Error} />
               </Switch>
             </div>
-          )}
+         {/*  )} */}
         </ScrollToTop>
       </div>
     </Router>
