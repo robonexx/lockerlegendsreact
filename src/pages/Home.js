@@ -7,7 +7,7 @@ const Home = () => {
     <div className='home-main'>
       <div className='overlay'></div>
       <video autoPlay loop muted className='video-home'>
-        <source src='/la.mp4' type='video/mp4' />
+        <source src='/la.webm' type='video/webm' />
       </video>
       <section className='home-section'>
         <h3>Welcome to</h3>
