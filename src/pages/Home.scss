@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font);
-
+/* 
   .video-home {
     position: absolute;
     top: 0;
@@ -17,8 +17,8 @@
     padding: 0;
     object-fit: cover;
     z-index: 1;
-  }
-  .overlay {
+  } */
+  /* .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,9 +29,9 @@
     object-fit: cover;
     background-color: rgba(0, 0, 0, 0.315);
     z-index: 2;
-  }
+  } */
 
-  .home-section {
+ /*  .hero-wrapper {
     position: relative;
     margin: 8rem auto 0;
     padding: 0;
@@ -59,7 +59,7 @@
         font-weight: 400;
         color: white;
       }
-  }
+  } */
   
   .home-article {
     position: relative;
@@ -115,7 +115,6 @@
       position: relative;
       margin: 5rem 0 5rem;
       padding: 1rem 5rem;
-      ;
     }
   }
   }

@@ -1,22 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Hero from '../components/hero/Hero';
 import './Home.scss';
 
 const Home = () => {
   return (
     <div className='home-main'>
-      <div className='overlay'></div>
+      <Hero />
+      {/* <div className='overlay'></div>
       <video autoPlay loop muted className='video-home'>
         <source src='/la.webm' type='video/webm' />
       </video>
-      <section className='home-section'>
+      <section className='hero-wrapper'>
         <h3>Welcome to</h3>
         <h1 className='headline'>LOCKERLEGENDS</h1>
 
         <h1 className='sub-header'>
           OFFICIAL “LOCKING” PIONEERS WEBSITE of the street dance pioneers
         </h1>
-      </section>
+      </section> */}
 
       <article className='home-article'>
         <h2>EDUCATE B4U RECREATE</h2>
